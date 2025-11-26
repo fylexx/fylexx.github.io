@@ -51,6 +51,55 @@
             opacity: 0.9;
             text-transform: uppercase;
             letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+
+        .contact {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .contact p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .linkedin-link {
+            display: inline-block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .linkedin-link:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .linkedin-icon {
+            width: 40px;
+            height: 40px;
+            filter: brightness(0) invert(1);
         }
 
         @media (max-width: 768px) {
@@ -73,6 +122,16 @@
         <img src="logo.png" alt="Company Logo" class="logo">
         <h1>Providing Coaches with the Data they need</h1>
         <p class="coming-soon">Coming Q1 2026</p>
+        
+        <div class="contact">
+            <p>Get in touch</p>
+            <div class="contact-info">
+                <a href="mailto:contact@yourcompany.com">Contact</a>
+                <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                    <img src="linkedin-icon.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
